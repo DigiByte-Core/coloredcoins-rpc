@@ -19,3 +19,7 @@ $ npm i coloredcoins-rpc
 ```sh
 $ mocha
 ```
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
