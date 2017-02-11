@@ -1,6 +1,6 @@
 {
   "name": "coloredcoins-rpc",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Colored-Coins RESTful API server wrapper in Node.js",
   "main": "index.js",
   "scripts": {
