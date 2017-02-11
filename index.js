@@ -19,13 +19,11 @@ function handleResponse (err, response, body, cb) {
 }
 
 function buildPathParamsString (params) {
-  var str = ''
-  if (params && Object.keys(params)) {
-    Object.keys(params).forEach(function (key) {
-      var value = params[key]
-      str += '/' + value    
-    })
-  } 
+  params = params || []
+  var str = params.reduce(function (str, param) {
+    str += '/' + param
+    return str
+  }, '')
   return str
 }
 
@@ -51,7 +49,7 @@ ColoredCoins.prototype.get = function (method, pathParams, queryParams, cb) {
     cb = queryParams
     queryParams = null
   }
-  
+
   var params_string = buildPathParamsString(pathParams)
   params_string += buildQueryParamsString(queryParams)
   var path = this.ccPath + '/' + method + params_string

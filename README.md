@@ -1,21 +1,20 @@
 # ColoredCoins-RPC
-[![Build Status](https://travis-ci.org/Colu-platform/coloredcoins-rpc.svg?branch=master)](https://travis-ci.org/Colu-platform/coloredcoins-rpc) [![Coverage Status](https://coveralls.io/repos/Colu-platform/coloredcoins-rpc/badge.svg?branch=master)](https://coveralls.io/r/Colu-platform/coloredcoins-rpc?branch=master) [![npm version](https://badge.fury.io/js/coloredcoins-rpc.svg)](http://badge.fury.io/js/coloredcoins-rpc)
+[![Build Status](https://travis-ci.org/Colored-Coins/coloredcoins-rpc.svg?branch=master)](https://travis-ci.org/Colored-Coins/coloredcoins-rpc) 
+[![Coverage Status](https://coveralls.io/repos/Colored-Coins/coloredcoins-rpc/badge.svg?branch=master)](https://coveralls.io/r/Colored-Coins/coloredcoins-rpc?branch=master) 
+[![npm version](https://badge.fury.io/js/coloredcoins-rpc.svg)](http://badge.fury.io/js/coloredcoins-rpc)
+[![Slack channel](http://slack.coloredcoins.org/badge.svg)](http://slack.coloredcoins.org)
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-## Using
+Colored-Coins RESTful API server wrapper in Node.js.
 
-### Installation
+## Installation
 
 ```sh
 $ npm i coloredcoins-rpc
 ```
 
-### Documentation
-
-## Developing
-
-### Testing
+## Testing
 
 ```sh
 $ mocha
