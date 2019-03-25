@@ -3,8 +3,8 @@
 var request = require('request')
 // var qs = require('qs')
 
-function ColoredCoins (ccPath) {
-  this.ccPath = ccPath
+function DigiAssets (daPath) {
+  this.daPath = daPath
 }
 
 function handleResponse (err, response, body, cb) {
@@ -44,7 +44,7 @@ function buildQueryParamsString (params) {
   return str
 }
 
-ColoredCoins.prototype.get = function (method, pathParams, queryParams, cb) {
+DigiAssets.prototype.get = function (method, pathParams, queryParams, cb) {
   if (typeof queryParams === 'function') {
     cb = queryParams
     queryParams = null
@@ -52,17 +52,17 @@ ColoredCoins.prototype.get = function (method, pathParams, queryParams, cb) {
 
   var params_string = buildPathParamsString(pathParams)
   params_string += buildQueryParamsString(queryParams)
-  var path = this.ccPath + '/' + method + params_string
+  var path = this.daPath + '/' + method + params_string
   request.get(path, function (err, response, body) {
     handleResponse(err, response, body, cb)
   })
 }
 
-ColoredCoins.prototype.post = function (method, params, cb) {
-  var path = this.ccPath + '/' + method
+DigiAssets.prototype.post = function (method, params, cb) {
+  var path = this.daPath + '/' + method
   request.post(path, {json: params}, function (err, response, body) {
     handleResponse(err, response, body, cb)
   })
 }
 
-module.exports = ColoredCoins
+module.exports = DigiAssets

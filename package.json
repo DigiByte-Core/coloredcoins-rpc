@@ -1,7 +1,7 @@
 {
-  "name": "coloredcoins-rpc",
-  "version": "0.1.1",
-  "description": "Colored-Coins RESTful API server wrapper in Node.js",
+  "name": "digiassets-rpc",
+  "version": "0.2.0",
+  "description": "DigiAssets RESTful API server wrapper in Node.js",
   "main": "index.js",
   "scripts": {
     "test": "istanbul cover _mocha -- -R spec",
@@ -9,11 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Colored-Coins/coloredcoins-rpc.git"
+    "url": "https://github.com/DigiByte-Core/digiassets-rpc.git"
   },
   "keywords": [
-    "colored",
-    "coins",
+    "digiassets",
+    "digibyte",
     "bitcoin"
   ],
   "contributors": [
@@ -27,7 +27,7 @@
     }
   ],
   "license": "Apache-2.0",
-  "homepage": "https://github.com/Colored-Coins/coloredcoins-rpc",
+  "homepage": "https://github.com/DigiByte-Core/digiassets-rpc",
   "dependencies": {
     "request": "^2.61.0"
   },
